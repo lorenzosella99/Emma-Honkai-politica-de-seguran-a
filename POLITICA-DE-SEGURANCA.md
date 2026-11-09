@@ -27,6 +27,7 @@ Controles mínimos para frontend GitHub Pages, Supabase Auth/Postgres/Edge Funct
 - Revisar views, RPCs, triggers, funções SECURITY DEFINER, Storage e grants.
 - Impedir autoelevação de privilégios.
 - Registrar ator, alvo, ação, horário e resultado de ações administrativas.
+- **Acesso a chats:** somente o Admin principal pode listar e consultar todos os chats e mensagens. Moderadores/vice-admins não recebem acesso global, mesmo que possam gerenciar denúncias; só podem receber o chat específico associado à denúncia/tarefa de moderação autorizada, com acesso mínimo necessário. O backend deve aplicar essa restrição, não apenas a interface.
 
 ## Aplicação web
 - Escapar conteúdo não confiável em HTML e atributos; preferir textContent e APIs DOM seguras.
